@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#inicio{
+    background: linear-gradient(rgba(38, 37, 37, 0.7), rgba(44, 41, 41, 0.7)), url('https://p4.wallpaperbetter.com/wallpaper/237/64/1003/at-work-business-computer-design-wallpaper-preview.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    color: #fff; 
+}
+
+#inicio .contenido header{
+    background-color: rgba(0,0,0,.9);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#inicio .contenido header .contenido-header{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#inicio .contenido header .contenido-header h1{
+   text-align: center;
+   color:burlywood; 
+}
+
+#inicio .contenido header .contenido-header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+} 
+
+#inicio .contenido header .contenido-header nav ul a:hover{
+    color:darksalmon;
+}
+
+#inicio .contenido .informacion{
+    max-width: 1100%;
+    height: 100vh;
+    margin: auto;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio .contenido .informacion{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#inicio .contenido .informacion h1{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+#inicio .contenido .informacion p{
+    padding-bottom: 10px;
+    color: bisque;
+}
+
+#inicio .contenido .informacion img{
+    border-radius: 20px;
+}
+
+#icono-nav{
+    display: none;
+}
+
+
+/* Sobre mi */
+#sobremi{
+    display: block;
+    background-color: rgba(28, 25, 22, 0.7);
+    color: #fff;
+}
+#sobremi h2{
+    font-size: 35px;
+    background-color: #000000;
+    color: rgb(218, 153, 89);
+    padding-left: 10px;
+}
+#tabla-sobremi td{
+    width: 500px;
+    padding: 10px;
+}
+
+
+/* Experiencias */
+#experiencias{
+    display: block;
+    background-color: rgba(28, 25, 22, 0.7);
+    color: #fff;
+}
+#experiencias h2{
+    font-size: 35px;
+    background-color: #000000;
+    color: rgb(218, 153, 89);
+    padding-left: 10px;
+}
+
+#experiencias h3 {
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+ul {
+    padding-left: 40px;
+}
+
+/* Habilidades */
+
+#habilidades {
+    display: block;
+    background-color: rgba(28, 25, 22, 0.7);
+    color: #fff;
+}
+
+#habilidades h2{
+    font-size: 35px;
+    background-color: #000000;
+    color: rgb(218, 153, 89);
+    padding-left: 10px;
+}
+#habilidades p{
+    padding: 50px;
+}
+
+#habilidades h3 {
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+    .redes-sociales{
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    nav.responsive {
+        display: block;
+        background-color: rgba(54, 42, 27, 0.7);
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left:0;
+        padding: 10px 0;
+
+    }
+    nav.responsive ul{
+        display: block !important;
+        text-align: right;
+    }
+    nav.responsive ul li{
+        margin: 6px;
+    }
+    #icono-nav {
+        display: block;
+    }
+    .informacion p{
+        padding: 10px;
+        text-align: center;
+    }
+
+    #habilidades p{
+        padding: 10px;
+    }
+}
